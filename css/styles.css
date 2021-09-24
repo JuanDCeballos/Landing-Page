@@ -1,1 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-background: #1f2937;
+  --extra-bold-text: #f9faf8;
+  --secondary-text: #e5e7eb;
+  --button-background-color: #3882f6;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+  background-color: var(--dark-background);
+}
+
+nav {
+  padding: 20px;
+}
+
+.logo {
+  color: var(--extra-bold-text);
+  font-size: 24px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  color: var(--secondary-text);
+}
+
+.title {
+  color: var(--extra-bold-text);
+  font-size: 48px;
+  text-align: center;
+}
+
+.desc p {
+  color: var(--secondary-text);
+  text-align: center;
+  font-size: 18px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+  border: none;
+  background-color: var(--button-background-color);
+  color: var(--extra-bold-text);
+  height: 37px;
+  width: 130px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.img-placeholder {
+  width: 300px;
+  height: 300px;
+  background-color: var(--secondary-text);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information-header {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
+}
+
+.card {
+  width: 150px;
+  text-align: center;
+}
+
+.card .box {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border: 5px solid var(--button-background-color);
+  border-radius: 10px;
+}
+
+.quote {
+  background-color: var(--secondary-text);
+}
+
+.quote-text {
+  font-size: 36px;
+  color: var(--dark-background);
+  font: italic;
+}
+
+.reference {
+  text-align: end;
+}
+
+.call {
+  background-color: var(--button-background-color);
+}
+
+.call .cta {
+  border: none;
+  border: 2px solid var(--extra-bold-text);
+}
+
+.footer {
+  background-color: var(--dark-background);
+  color: var(--extra-bold-text);
+  text-align: center;
+}
