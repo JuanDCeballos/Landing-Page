@@ -25,6 +25,14 @@ nav {
   padding: 20px;
 }
 
+header {
+  padding-bottom: 130px;
+}
+
+.img {
+  margin-top: 10px;
+}
+
 .logo {
   color: var(--extra-bold-text);
   font-size: 24px;
@@ -35,6 +43,10 @@ ul {
   list-style: none;
   text-align: center;
   color: var(--secondary-text);
+}
+
+ul li {
+  margin: 10px;
 }
 
 .title {
@@ -50,6 +62,7 @@ ul {
 }
 
 .btn {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
@@ -77,6 +90,7 @@ ul {
 }
 
 .information-header {
+  padding: 40px;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -88,6 +102,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 52px;
+  padding-bottom: 130px;
 }
 
 .card {
@@ -97,6 +112,7 @@ ul {
 
 .card .box {
   margin: 0 auto;
+  margin-bottom: 10px;
   width: 150px;
   height: 150px;
   border: 5px solid var(--button-background-color);
@@ -105,23 +121,45 @@ ul {
 
 .quote {
   background-color: var(--secondary-text);
+  padding: 20px;
 }
 
 .quote-text {
   font-size: 36px;
   color: var(--dark-background);
-  font: italic;
+  font-style: italic;
 }
 
 .reference {
   text-align: end;
+  font-weight: 700;
 }
 
 .call {
+  background-color: var(--extra-bold-text);
+  padding: 20px;
+}
+
+.call .text {
   background-color: var(--button-background-color);
+  width: 250px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.call .text h4 {
+  color: var(--extra-bold-text);
+  margin-bottom: 10px;
+}
+
+.call .text p {
+  color: var(--secondary-text);
 }
 
 .call .cta {
+  margin-top: 10px;
   border: none;
   border: 2px solid var(--extra-bold-text);
 }
@@ -130,4 +168,8 @@ ul {
   background-color: var(--dark-background);
   color: var(--extra-bold-text);
   text-align: center;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
