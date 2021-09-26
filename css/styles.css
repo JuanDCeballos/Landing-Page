@@ -26,6 +26,7 @@ nav {
 }
 
 header {
+  padding-top: 130px;
   padding-bottom: 130px;
 }
 
@@ -77,6 +78,13 @@ ul li {
   font-weight: 700;
   margin: 0 auto;
   font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background-color: var(--extra-bold-text);
+  color: var(--button-background-color);
+  cursor: pointer;
 }
 
 .img-placeholder {
@@ -90,7 +98,7 @@ ul li {
 }
 
 .information-header {
-  padding: 40px;
+  padding: 50px;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -142,11 +150,11 @@ ul li {
 
 .call .text {
   background-color: var(--button-background-color);
-  width: 250px;
   height: 150px;
   margin: 0 auto;
   padding: 10px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .call .text h4 {
@@ -172,4 +180,95 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  .call .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .call .text h4 {
+    text-align: initial;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .menu,
+  .introduction {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .introduction {
+    display: flex;
+  }
+
+  .img {
+    margin: 0;
+  }
+
+  .img-placeholder {
+    width: 630px;
+  }
+
+  .title {
+    text-align: start;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 130px;
+  }
+
+  .desc p {
+    text-align: start;
+    letter-spacing: 2px;
+  }
+
+  .quote {
+    padding: 130px;
+  }
+
+  .quote-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 878px;
+    margin: 0 auto;
+  }
+
+  .call {
+    padding: 90px;
+  }
+
+  .call .text {
+    width: 1300px;
+    text-align: unset;
+  }
+
+  .text .content {
+    margin-left: 100px;
+    flex: auto;
+  }
+
+  .call .text h4 {
+    text-align: unset;
+  }
+
+  .text .call-btn {
+    flex: auto;
+  }
 }
